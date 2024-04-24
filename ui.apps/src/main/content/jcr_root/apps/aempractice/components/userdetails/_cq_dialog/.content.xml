@@ -29,61 +29,61 @@
                                 required="{Boolean}true"
                                 useFixedInlineToolbar="{Boolean}true"/>
                             <lname
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                    fieldLabel="Last Name"
-                                    name="./lname"
-                                    required="{Boolean}true"
-                                    useFixedInlineToolbar="{Boolean}true"/>
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Last Name"
+                                name="./lname"
+                                required="{Boolean}true"
+                                useFixedInlineToolbar="{Boolean}true"/>
                             <dob
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                    fieldLabel="Date Of Birth"
-                                    name="./dob"
-                                    validation="date.validation"
-                                    useFixedInlineToolbar="{Boolean}true"/>
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Date Of Birth"
+                                name="./dob"
+                                useFixedInlineToolbar="{Boolean}true"
+                                validation="date.validation"/>
                             <gender
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                                    fieldLabel="Gender"
-                                    name="./gender"
-                                    useFixedInlineToolbar="{Boolean}true">
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Gender"
+                                name="./gender"
+                                useFixedInlineToolbar="{Boolean}true">
                                 <items jcr:primaryType="nt:unstructured">
                                     <male
-                                            jcr:primaryType="nt:unstructured"
-                                            text="Male"
-                                            value="Male"/>
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Male"
+                                        value="Male"/>
                                     <female
-                                            jcr:primaryType="nt:unstructured"
-                                            text="Female"
-                                            value="Female"/>
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Female"
+                                        value="Female"/>
                                     <other
-                                            jcr:primaryType="nt:unstructured"
-                                            text="Other"
-                                            value="Other"/>
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Other"
+                                        value="Other"/>
                                 </items>
                             </gender>
                             <mobile
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                    fieldLabel="Mobile Number"
-                                    name="./mobile"
-                                    validation="mobile.validation"
-                                    useFixedInlineToolbar="{Boolean}true"/>
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Mobile Number"
+                                name="./mobile"
+                                useFixedInlineToolbar="{Boolean}true"
+                                validation="mobile.validation"/>
                             <email
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                    fieldLabel="Email ID"
-                                    name="./email"
-                                    validation="email.validation"
-                                    useFixedInlineToolbar="{Boolean}true"/>
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Email ID"
+                                name="./email"
+                                useFixedInlineToolbar="{Boolean}true"
+                                validation="email.validation"/>
                             <address
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/foundation/form/textarea"
-                                    class="field-whitespace"
-                                    fieldDescription="Please enter the complete address"
-                                    fieldLabel="Address"
-                                    name="./address"/>
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                class="field-whitespace"
+                                fieldDescription="Please enter the complete address"
+                                fieldLabel="Address"
+                                name="./address"/>
                         </items>
                     </column>
                 </items>
