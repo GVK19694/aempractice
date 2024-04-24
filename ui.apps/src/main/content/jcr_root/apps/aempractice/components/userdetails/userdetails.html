@@ -1,0 +1,17 @@
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"/>
+<sly data-sly-call="${template.placeholder @ isEmpty=!properties.fname || !properties.lname}"/>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientlib.all @ categories='aem.practice.validation'}"/>
+
+<sly data-sly-test="${properties.fname}">
+    <div class="body">
+        <h1 class="glow">User Details</h1>
+        <p><strong>First Name: </strong> ${properties.fname}</p>
+        <p><strong>Last Name: </strong> ${properties.lname}</p>
+        <p><strong>Birth Date: </strong> ${properties.dob}</p>
+        <p><strong>Gender: </strong> ${properties.gender}</p>
+        <p><strong>Mobile No: </strong> ${properties.mobile}</p>
+        <p><strong>Email ID: </strong> ${properties.email}</p>
+        <p><strong>Address: </strong> ${properties.address}</p>
+    </div>
+</sly>
