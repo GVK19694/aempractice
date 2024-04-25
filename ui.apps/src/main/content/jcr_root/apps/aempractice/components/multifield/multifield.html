@@ -1,5 +1,5 @@
 <section>
-    <h2>Multi User Details</h2>
+    <h2>Multi User Details Coming From Pure HTL</h2>
     <sly data-sly-list.users="${resource.getChildren}">
         <sly data-sly-test="${users.name == 'user'}"
             data-sly-list.ud="${users.getChildren}">
@@ -15,5 +15,21 @@
                 </li>
             </ul>
         </sly>
+    </sly>
+</section>
+<section data-sly-use.multi="com.aem.practice.core.models.MultiFieldModel">
+    <h2>Multi User Details Coming From Sling Models</h2>
+    <sly data-sly-list.items="${multi.users}">
+        <ul>
+            <li>
+                <p><strong>First Name: </strong> ${items.fname}</p>
+                <p><strong>Last Name: </strong> ${items.lname}</p>
+                <p><strong>Birth Date: </strong> ${items.dob}</p>
+                <p><strong>Gender: </strong> ${items.gender}</p>
+                <p><strong>Mobile No: </strong> ${items.mobile}</p>
+                <p><strong>Email ID: </strong> ${items.email}</p>
+                <p><strong>Address: </strong> ${items.address}</p>
+            </li>
+        </ul>
     </sly>
 </section>
