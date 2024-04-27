@@ -13,13 +13,13 @@ import java.util.List;
 )
 public interface NestedMultiFieldModel {
     @Inject
-    List<UserData> getUsersDetails();
+    List<User> getUser();
 
     @Model(
             adaptables = {Resource.class},
             defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
     )
-    interface UserData {
+    interface User {
         @Inject
         String getFname();
 
@@ -36,13 +36,13 @@ public interface NestedMultiFieldModel {
         String getGender();
 
         @Inject
-        List<ContactDetails> getContactDetails();
+        List<Contact> getContact();
 
         @Model(
                 adaptables = {Resource.class},
                 defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
         )
-        interface ContactDetails {
+        interface Contact {
             @Inject
             String getMobile();
 

@@ -30,7 +30,7 @@
 </section>
 <section data-sly-use.nested="com.aem.practice.core.models.NestedMultiFieldModel">
     <h2>Nested Multi User Data Coming From Sling Models</h2>
-    <sly data-sly-list.users="${nested.usersDetails}">
+    <sly data-sly-list.users="${nested.user}">
         <ul>
             <li>
                 <p><strong>First Name: </strong> ${users.fname}</p>
@@ -38,7 +38,7 @@
                 <p><strong>Birth Date: </strong> ${users.dob}</p>
                 <p><strong>Gender: </strong> ${users.gender}</p>
                 <p><strong>Mobile No: </strong>
-                    <sly data-sly-list.contacts="${users.contactDetails}">
+                    <sly data-sly-list.contacts="${users.contact}">
                         <ul>
                             <li>
                                 <p>${contacts.mobile}</p>
