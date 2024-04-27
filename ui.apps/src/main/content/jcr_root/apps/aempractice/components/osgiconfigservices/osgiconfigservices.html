@@ -1,0 +1,41 @@
+<sly data-sly-use.pc="com.aem.practice.core.models.ProfileCardModel"/>
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"/>
+<sly data-sly-call="${template.placeholder @ isEmpty=!properties.socialMedia}"/>
+
+<div class="container">
+    <div class="card">
+        <p class="card__name">PROFILE CARD</p>
+        <sly data-sly-list.props="${resource.getChildren}">
+            <sly data-sly-test="${props.name == 'socialMedia'}"
+                 data-sly-list.sm="${props.getChildren}">
+                <div class="social-icons">
+                    <div class="li" data-sly-test="${sm.icons == 'Facebook'}">
+                        <a class="link" href="${pc.facebook}" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="li" data-sly-test="${sm.icons == 'Instagram'}">
+                        <a class="link" href="${pc.instagram}" target="_blank">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="li" data-sly-test="${sm.icons == 'LinkedIn'}">
+                        <a class="link" href="${pc.linkedin}" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="li" data-sly-test="${sm.icons == 'Twitter'}">
+                        <a class="link" href="${pc.twitter}" target="_blank">
+                            <i class="fa-brands fa-square-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="li" data-sly-test="${sm.icons == 'Github'}">
+                        <a class="link" href="${pc.github}" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </sly>
+        </sly>
+    </div>
+</div>
